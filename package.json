@@ -1,0 +1,32 @@
+{
+  "name": "create-actions",
+  "version": "1.0.0",
+  "description": "FSA compliant way of creating actions automatically",
+  "main": "lib/createActions.js",
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "test": "node test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:goatslacker/create-actions.git"
+  },
+  "keywords": [
+    "actions",
+    "flux",
+    "create",
+    "generate",
+    "fsa",
+    "action",
+    "dispatch"
+  ],
+  "author": "Josh Perez <josh@goatslacker.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/goatslacker/create-actions/issues"
+  },
+  "homepage": "https://github.com/goatslacker/create-actions",
+  "devDependencies": {
+    "babel": "5.8.23"
+  }
+}
