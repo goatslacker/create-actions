@@ -1,6 +1,6 @@
 {
   "name": "create-actions",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "FSA compliant way of creating actions automatically",
   "main": "lib/createActions.js",
   "scripts": {
