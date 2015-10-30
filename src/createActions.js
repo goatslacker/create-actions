@@ -7,11 +7,10 @@ export const dispatch = (x, ...a) => {
 const createActions = (namespace, obj) => {
   return Object.keys(obj).reduce((actions, name) => {
     const id = `${namespace}/${name}`
-    actions[name] = {
-      id,
-      dispatch: obj[name],
-      fsa: x => ({ type: id, payload: obj[name](x) }),
-    }
+    const action = x => ({ type: id, payload: obj[name](x) })
+    action.id = id
+    action.dispatch = obj[name]
+    actions[name] = action
     return actions
   }, {})
 }
