@@ -68,5 +68,5 @@ Using this with something like [`redux`](https://github.com/rackt/redux) is also
 import { generateActions } from 'create-actions'
 const DocumentActions = generateActions('DocumentActions', ['changedTitle'])
 
-store.dispatch(DocumentActions.changedTitle.dispatch('This is the new title'))
+store.dispatch(DocumentActions.changedTitle('This is the new title'))
 ```
